@@ -1,8 +1,11 @@
+// points is unknown matter
+
+
 let modInfo = {
 	name: "The Insperation Of Many Trees",
 	id: "ujf9sd832jjisdfu99uqhfdopdwsd73hdfiosb",
 	author: "ZotZot10",
-	pointsName: "unknown matter",
+	pointsName: "Unknown Matter",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
