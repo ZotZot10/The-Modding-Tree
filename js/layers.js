@@ -6,7 +6,7 @@ addLayer("CUM", {
         unlocked: true,
 		points: new Decimal(0),
     }},
-    color: "#4BDC13",
+    color: "Orange",
     requires: new Decimal(10), // Can be a function that takes requirement increases into account
     resource: "Condensed Unknown Matter", // Name of prestige currency
     baseResource: "Unknown Matter", // Name of resource prestige is based on
