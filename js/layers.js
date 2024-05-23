@@ -27,7 +27,9 @@ addLayer("CUM", {
     layerShown(){return true}
 ,    upgrades: {
     11: {
-
+        title: "Is This A Start?",
+        description: "2.5x Your Unknown Matter",
+        cost: new Decimal(1),
     },
 },
 })
