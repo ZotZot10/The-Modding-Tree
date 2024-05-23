@@ -25,5 +25,9 @@ addLayer("CUM", {
         {key: "C", description: "C: Reset for Condensed Unknown Matter", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
+,    upgrades: {
+    11: {
 
+    },
+},
 })
