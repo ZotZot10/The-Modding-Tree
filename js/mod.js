@@ -2,7 +2,7 @@ let modInfo = {
 	name: "The Insperation Of Many Trees",
 	id: "ujf9sd832jjisdfu99uqhfdopdwsd73hdfiosb",
 	author: "ZotZot10",
-	pointsName: "points",
+	pointsName: "unknown matter",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
@@ -13,8 +13,8 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
-	name: "Literally nothing",
+	num: "0.01",
+	name: "The First Update",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
