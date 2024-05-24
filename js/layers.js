@@ -106,7 +106,7 @@ addLayer("H", {
     }},
 
     color: "#4BDC13",                       // The color for this layer, which affects many elements.
-    resource: "H points",            // The name of this layer's main prestige resource.
+    resource: "Hollow Points",            // The name of this layer's main prestige resource.
     row: 0,                                 // The row this layer is on (0 is the first row).
 
     baseResource: "Unknown Matter",                 // The name of the resource your prestige gain is based on.
@@ -119,7 +119,7 @@ addLayer("H", {
     exponent: 0.01,                          // "normal" prestige gain is (currency^exponent).
 
     gainMult() {                            // Returns your multiplier to your gain of the prestige resource.
-        return new Decimal(1)               // Factor in any bonuses multiplying gain here.
+        return new Decimal(3)               // Factor in any bonuses multiplying gain here.
     },
     gainExp() {                             // Returns the exponent to your gain of the prestige resource.
         return new Decimal(1)
