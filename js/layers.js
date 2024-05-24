@@ -41,7 +41,7 @@ addLayer("CUM", {
         description: "Condensed Unknown Matter Boosts Unknown Matter",
         cost: new Decimal(7),
         effect() {
-            return player[this.layer].points.add(1).pow(1.0005)
+            return player[this.layer].points.add(1).pow(0.8)
         },
         effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
     },
