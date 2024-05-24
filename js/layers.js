@@ -55,7 +55,15 @@ addLayer("CUM", {
         },
         effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
     },
-
+    15: {
+        title: "Another Self Booster? 2",
+        description: "Unknown Matter Boosts Condensed Unknown Matter",
+        cost: new Decimal(72),
+        effect() {
+            return player.points.add(1).pow(0.4)
+        },
+        effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
+    },
 
 
 },
