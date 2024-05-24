@@ -75,7 +75,7 @@ addLayer("CUM", {
     22: {
         title: "What Is Happening Here",
         description: "A Hidden Boost",
-        cost: new Decimal(4e5),
+        cost: new Decimal(1.2e6),
         effect() {
             return player.points.add(1).pow(0.3)
         },
