@@ -89,7 +89,7 @@ addLayer("CUM", {
     24: {
         title: "1",
         description: "Unknown Matter Boosts Unknown Matter",
-        cost: new Decimal(3e16),
+        cost: new Decimal(2e24),
         effect() {
             return player.points.add(1).pow(0.2)
         },
