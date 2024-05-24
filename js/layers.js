@@ -116,7 +116,7 @@ addLayer("H", {
                                             // Also the amount required to unlock the layer.
 
     type: "normal",                         // Determines the formula used for calculating prestige currency.
-    exponent: 0.01,                          // "normal" prestige gain is (currency^exponent).
+    exponent: 0.000001,                          // "normal" prestige gain is (currency^exponent).
 
     gainMult() {                            // Returns your multiplier to your gain of the prestige resource.
         return new Decimal(3)               // Factor in any bonuses multiplying gain here.
@@ -130,4 +130,11 @@ addLayer("H", {
     upgrades: {
         // Look in the upgrades docs to see what goes here!
     },
+    challenges: {
+        11: {
+            name: "The Beggining Of Filling The Hollow",
+            challengeDescription: "Get 100 Condensed Unknown Matter When Unknown Matter Gain Is Divided By 2",
+            canComplete: function() {return player.points.gte(1e2)},
+        },
+    }
 })
