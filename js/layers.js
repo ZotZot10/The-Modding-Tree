@@ -18,7 +18,6 @@ addLayer("CUM", {
         if (hasUpgrade('CUM', 14)) mult = mult.times(upgradeEffect('CUM', 14))
         if (hasUpgrade('CUM', 15)) mult = mult.times(upgradeEffect('CUM', 15))
         if (hasUpgrade('CUM', 21)) mult = mult.times(4)
-        if (hasUpgrade('CUM', 23)) then (hasUpgrade('CUM', 22)) = false    
         if (hasUpgrade('CUM', 22)) mult = mult.times(upgradeEffect('CUM', 22))
         if (hasUpgrade('CUM', 23)) mult = mult.times(16)  
             return mult
@@ -83,9 +82,9 @@ addLayer("CUM", {
         },
     },
     23: {
-        title: "Lost And Won?",
-        description: "You Lose A Boost But You Get 16x Condensed Unknown Matter",
-        cost: new Decimal(2e10),
+        title: "Lets Start With Numbers",
+        description: "Yes I Know Im Boring But... Just take 16x Condensed Unknown Matter",
+        cost: new Decimal(3e13),
         },
     },
 },
