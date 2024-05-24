@@ -15,7 +15,6 @@ addLayer("CUM", {
     exponent: 0.2, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
-        if (hasUpgrade('CUM', 14)) gain = gain.times(upgradeEffect('CUM', 14))
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -50,7 +49,7 @@ addLayer("CUM", {
         title: "Another Self Booster?",
         description: "Unknown Matter Boosts Condensed Unknown Matter",
         cost: new Decimal(23),
-        upgradeEffect() {
+        effect() {
             return player.points.add(1).pow(0.1)
         },
         effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
