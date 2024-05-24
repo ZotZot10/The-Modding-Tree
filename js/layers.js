@@ -133,7 +133,7 @@ addLayer("H", {
     challenges: {
         11: {
             name: "The Beggining Of Filling The Hollow",
-            challengeDescription: "Get 100 Condensed Unknown Matter When Unknown Matter Gain Is Divided By 2",
+            challengeDescription: "Unknown Matter Gain Is Divided By 2",
             canComplete: function() {return player.points.gte(1e2)},
         },
     }
