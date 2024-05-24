@@ -83,7 +83,7 @@ addLayer("CUM", {
     },
     23: {
         title: "Lets Start With Numbers",
-        description: "Yes I Know Im Boring But... Just take 16x Condensed Unknown Matter",
+        description: "Yes I Know Im Boring But... Just take 16x Condensed Unknown Matter As an Apology",
         cost: new Decimal(3e13),
         },
     },
