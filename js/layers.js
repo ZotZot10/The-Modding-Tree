@@ -17,6 +17,7 @@ addLayer("CUM", {
         mult = new Decimal(1)
         if (hasUpgrade('CUM', 14)) mult = mult.times(upgradeEffect('CUM', 14))
         if (hasUpgrade('CUM', 15)) mult = mult.times(upgradeEffect('CUM', 15))
+        if (hasUpgrade('CUM', 21)) mult = mult.times(4)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -65,7 +66,11 @@ addLayer("CUM", {
         },
         effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
     },
-
+    21: {
+        title: "Just A Normal Boost",
+        description: "4x Condensed Unknown Matter and Unknown Matter",
+        cost: new Decimal(495),
+    },
 
 },
 })

@@ -49,6 +49,7 @@ function getPointGen() {
 	if (hasUpgrade('CUM', 11)) gain = gain.times(2.5)
 	if (hasUpgrade('CUM', 12)) gain = gain.times(1.6)
 	if (hasUpgrade('CUM', 13)) gain = gain.times(upgradeEffect('CUM', 13))
+	if (hasUpgrade('CUM', 21)) mult = mult.times(2)
 		return gain
 }
 
