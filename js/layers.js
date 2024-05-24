@@ -99,7 +99,7 @@ addLayer("CUM", {
     },
 }
 )
-addLayer("H", {
+addLayer("H"), {
     startData() { return {                  // startData is a function that returns default data for a layer. 
         unlocked: true,                     // You can add more variables here to add them to your layer.
         points: new Decimal(0),             // "points" is the internal name for the main resource of the layer.
@@ -119,6 +119,7 @@ addLayer("H", {
     exponent: 0.000001,                          // "normal" prestige gain is (currency^exponent).
 
     gainMult() {                            // Returns your multiplier to your gain of the prestige resource.
+        
         return new Decimal(3)               // Factor in any bonuses multiplying gain here.
     },
     gainExp() {                             // Returns the exponent to your gain of the prestige resource.
@@ -128,14 +129,11 @@ addLayer("H", {
     layerShown() { return true },          // Returns a bool for if this layer's node should be visible in the tree.
 
     upgrades: {
-        // Look in the upgrades docs to see what goes here!
+         11: {
+            title: "A Hollow Point?",
+            description: "Unlock Condensed Unknown Matter Sub-Tab",
+            cost: new Decimal(2),
     },
-    challenges: {
-        11: {
-            name: "The Beggining Of Filling The Hollow",
-            challengeDescription: "Unknown Matter Gain Is Divided By 2",
-            canComplete: function() {return player.points.gte(1e2)},
-            rewardDescription: "2x Hollow Points Gain And Unlock A New Challange"
-        },
-    }
-})
+    
+}
+}
