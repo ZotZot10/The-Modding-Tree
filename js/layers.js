@@ -18,6 +18,7 @@ addLayer("CUM", {
         if (hasUpgrade('CUM', 14)) mult = mult.times(upgradeEffect('CUM', 14))
         if (hasUpgrade('CUM', 15)) mult = mult.times(upgradeEffect('CUM', 15))
         if (hasUpgrade('CUM', 21)) mult = mult.times(4)
+        if (hasUpgrade('CUM', 22)) mult = mult.times(upgradeEffect('CUM', 22))
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -73,7 +74,7 @@ addLayer("CUM", {
     },
     22: {
         title: "What Is Happening Here",
-        description: "A Hidden Boost",
+        description: "A Hidden Boost But You Will Notice It",
         cost: new Decimal(4e5),
         effect() {
             return player.points.add(1).pow(0.1)
