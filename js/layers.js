@@ -121,7 +121,7 @@ addLayer("H", {
                                             // Also the amount required to unlock the layer.
 
     type: "normal",                         // Determines the formula used for calculating prestige currency.
-    exponent: 0.5,                          // "normal" prestige gain is (currency^exponent).
+    exponent: 0.0000000001,                          // "normal" prestige gain is (currency^exponent).
 
     gainMult() {                            // Returns your multiplier to your gain of the prestige resource.
         return new Decimal(1)               // Factor in any bonuses multiplying gain here.
