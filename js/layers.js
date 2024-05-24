@@ -31,5 +31,10 @@ addLayer("CUM", {
         description: "2.5x Your Unknown Matter",
         cost: new Decimal(1),
     },
+    12: {
+        title: "Ig It Was",
+        description: "1.6x Your Unknown Matter",
+        cost: new Decimal(2),
+    },
 },
 })
