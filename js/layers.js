@@ -32,9 +32,18 @@ addLayer("CUM", {
         cost: new Decimal(1),
     },
     12: {
-        title: "Ig It Was",
+        title: "It Was!",
         description: "1.6x Your Unknown Matter",
         cost: new Decimal(2),
+    },
+    13: {
+        title: "A Self Booster?",
+        description: "Unknown Matter Boosts Unknown Matter",
+        cost: new Decimal(7),
+        effect() {
+            return player[this.layer].points.add(1).pow(0.7)
+        },
+        effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
     },
 },
 })
