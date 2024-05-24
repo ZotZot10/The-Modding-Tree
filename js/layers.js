@@ -14,14 +14,7 @@ addLayer("CUM", {
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.2, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
-        gainMult() 
-        {
-            
-            let mult = new Decimal(1)
-            if (hasUpgrade('p', 13)) mult = mult.times(upgradeEffect('p', 13))
-            return mult
-        }
-        
+        mult = new Decimal(1)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -48,7 +41,7 @@ addLayer("CUM", {
         description: "Condensed Unknown Matter Boosts Unknown Matter",
         cost: new Decimal(7),
         effect() {
-            return player[this.layer].points.add(1).pow(1.005)
+            return player[this.layer].points.add(1).pow(1.0005)
         },
         effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
     },
