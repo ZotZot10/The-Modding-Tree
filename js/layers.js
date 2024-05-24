@@ -77,7 +77,7 @@ addLayer("CUM", {
         description: "A Hidden Boost But You Will Notice It",
         cost: new Decimal(4e5),
         effect() {
-            return player.points.add(1).pow(0.1)
+            return player.points.add(1).pow(1.0000000000000000000000005)
         },
     },
 },
