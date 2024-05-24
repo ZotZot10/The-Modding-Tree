@@ -61,7 +61,7 @@ addLayer("CUM", {
     15: {
         title: "Another Self Booster? 2",
         description: "Unknown Matter Boosts Condensed Unknown Matter",
-        cost: new Decimal(72),
+        cost: new Decimal(162),
         effect() {
             return player.points.add(1).pow(0.4)
         },
@@ -70,14 +70,14 @@ addLayer("CUM", {
     21: {
         title: "Just A Normal Boost",
         description: "4x Condensed Unknown Matter and Unknown Matter",
-        cost: new Decimal(495),
+        cost: new Decimal(1284),
     },
     22: {
         title: "What Is Happening Here",
         description: "A Hidden Boost",
         cost: new Decimal(4e5),
         effect() {
-            return player.points.add(1).pow(0.6)
+            return player.points.add(1).pow(0.3)
         },
     },
 },
