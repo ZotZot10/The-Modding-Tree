@@ -135,6 +135,7 @@ addLayer("H", {
             name: "The Beggining Of Filling The Hollow",
             challengeDescription: "Unknown Matter Gain Is Divided By 2",
             canComplete: function() {return player.points.gte(1e2)},
+            rewardDescription: "2x Hollow Points Gain And Unlock A New Challange"
         },
     }
 })
