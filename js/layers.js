@@ -126,14 +126,5 @@ addLayer("H"), {
         return new Decimal(1)
     },
 
-    layerShown() { return true },          // Returns a bool for if this layer's node should be visible in the tree.
-
-    upgrades: {
-         11: {
-            title: "A Hollow Point?",
-            description: "Unlock Condensed Unknown Matter Sub-Tab",
-            cost: new Decimal(2),
-    },
-    
-}
+    layerShown() { return true },          // Returns a bool for if this layer's node should be visible in the tree.   
 }
