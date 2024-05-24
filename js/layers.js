@@ -71,6 +71,13 @@ addLayer("CUM", {
         description: "4x Condensed Unknown Matter and Unknown Matter",
         cost: new Decimal(495),
     },
-
+    22: {
+        title: "What Is Happening Here",
+        description: "A Hidden Boost",
+        cost: new Decimal(4e5),
+        effect() {
+            return player.points.add(1).pow(0.1)
+        },
+    },
 },
 })
