@@ -15,7 +15,7 @@ addLayer("CUM", {
     exponent: 0.2, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
-        if (hasUpgrade('CUM', 14)) gain = gain.times(upgradeEffect('CUM', 14))
+        if (hasUpgrade('CUM', 14)) multi = multi.times(upgradeEffect('CUM', 14))
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
