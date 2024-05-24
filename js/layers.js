@@ -124,7 +124,7 @@ addLayer("H", {
     exponent: 0.0000000001,                          // "normal" prestige gain is (currency^exponent).
 
     gainMult() {                            // Returns your multiplier to your gain of the prestige resource.
-        return new Decimal(1)               // Factor in any bonuses multiplying gain here.
+        return new Decimal(3)               // Factor in any bonuses multiplying gain here.
     },
     gainExp() {                             // Returns the exponent to your gain of the prestige resource.
         return new Decimal(1)
