@@ -16,6 +16,7 @@ addLayer("CUM", {
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         if (hasUpgrade('CUM', 14)) mult = mult.times(upgradeEffect('CUM', 14))
+        if (hasUpgrade('CUM', 15)) mult = mult.times(upgradeEffect('CUM', 15))
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
