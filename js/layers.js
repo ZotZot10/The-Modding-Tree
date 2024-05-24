@@ -86,6 +86,16 @@ addLayer("CUM", {
         description: "Yes I Know Im Boring But... Just take 16x Condensed Unknown Matter As an Apology",
         cost: new Decimal(3e13),
         },
+    24: {
+        title: "1",
+        description: "Unknown Matter Boosts Unknown Matter",
+        cost: new Decimal(3e16),
+        effect() {
+            return player.points.add(1).pow(0.2)
+        },
+        effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
     },
-},
+    
+    },
+}
 )
