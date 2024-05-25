@@ -42,7 +42,7 @@ addLayer("CUM", {
         cost: new Decimal(2),
     },
     13: {
-        title: "A Self Booster?",
+        title: "A Thing Boosts Another Thing?",
         description: "Condensed Unknown Matter Boosts Unknown Matter",
         cost: new Decimal(7),
         effect() {
@@ -51,7 +51,7 @@ addLayer("CUM", {
         effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
     },
     14: {
-        title: "Another Self Booster?",
+        title: "A Thing Boosts Another Thing? 2",
         description: "Unknown Matter Boosts Condensed Unknown Matter",
         cost: new Decimal(23),
         effect() {
@@ -60,7 +60,7 @@ addLayer("CUM", {
         effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
     },
     15: {
-        title: "Another Self Booster? 2",
+        title: "A Thing Boosts Another Thing? 3",
         description: "Unknown Matter Boosts Condensed Unknown Matter",
         cost: new Decimal(162),
         effect() {
